@@ -6,7 +6,52 @@
     <title>IP Detective</title>
     <link rel="stylesheet" href="./assets/style/index.css">
 </head>
-<body>
-    <h1 class="text-red-500 font-bold text-8xl">welcome</h1>
+<body class="font-serif">
+   <header class="shadow-lg p-5">
+      <div class="sm:flex justify-between sm:mx-36">
+        <div class="flex justify-between items-center">
+            <a href="#" class=" font-bold text-2xl tracking-wide"><span class="text-violet-900">IP</span> Detective</a>
+            <button id="CloseBtn" class="sm:hidden px-3 py-2 bg-slate-900 rounded text-white">X</button>
+        </div>
+        <div class="">
+          <div class="flex flex-col gap-7 mt-3 sm:mt-0 hidden  sm:space-x-12 sm:block" id="headerTile">
+            <a href="index.html" class="text-violet-900 font-bold">Home</a>
+            <a href="" class="text-gray-500 hover:text-violet-900">About us</a>
+            <a href="login.html" class="font-bold px-6 py-2 border border-black hover:bg-gray-200">Log in</a>
+            <a href="signup.html" class="bg-black text-white px-6 py-2 hover:bg-gray-700 ">Sign up</a>
+          </div>
+        </div>
+      </div>
+   </header>
+   <main>
+      <div class="border w-96 mt-10 mx-auto p-10">
+        <div class="flex items-center justify-between">
+          <div class="font-bold text-2xl">You'r Ip Address</div>
+          <div class="text-gray-500 cursor-pointer ">  
+            <a href="#" class="cursor-copy active:text-red-500">
+              <svg  xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="currentColor" d="M28 10v18H10V10zm0-2H10a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2"/><path fill="currentColor" d="M4 18H2V4a2 2 0 0 1 2-2h14v2H4Z"/></svg>
+            </a>        
+          </div>
+        </div>
+        <h1 class="text-center p-4 font-light text-2xl text-violet-900">33.777.777.45</h1>
+      </div>
+      <table class="border-collapse table-auto border border-slate-400 mt-10 mx-auto snap-both"> 
+         <tr>
+           <th class="border p-4 bg-violet-200">USER NAME</th>
+           <th class="border p-4 bg-violet-200">EMAIL</th>
+           <th class="border p-4 bg-violet-200">IP ADDRESS</th>
+           <th class="border p-4 bg-violet-200">REGISTER TIME</th>
+           <th class="border p-4 bg-violet-200">DELETE</th>
+         </tr>
+         <tr >
+          <td class="border p-4">praveen</td>
+          <td class="border p-4">praveen200307@gmail.com</td>
+          <td class="border p-4">33.454.456.44</td>
+          <td class="border p-4">24th july 2003</td>
+          <td class="border p-4 text-gray-500 cursor-pointer" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M5 21V6H4V4h5V3h6v1h5v2h-1v15zm2-2h10V6H7zm2-2h2V8H9zm4 0h2V8h-2zM7 6v13z"/></svg></td>
+         </tr>
+      </table>
+   </main>
+   <script type="module" src="./assets/js/index.js"></script>
 </body>
 </html>
