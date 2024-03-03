@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 
+.userInput:valid{
+   border-color: blueviolet;
+}
+
 .userInput:focus ~label,
 .userInput:valid ~label
 {
@@ -10,6 +14,7 @@
    background-color: white;
    color: blueviolet;
    transition: 0.2s;
+   border-color: blueviolet;
 }
 
 .Inputs{
@@ -18,3 +23,4 @@
 .user-label{
   @apply absolute left-4 top-3 font-serif font-black 
 }
+
