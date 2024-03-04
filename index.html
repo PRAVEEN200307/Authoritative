@@ -8,13 +8,13 @@
 </head>
 <body class="font-serif">
    <header class="shadow-lg p-5">
-      <div class="sm:flex justify-between sm:mx-36">
+      <div class="sm:flex justify-between md:mx-36">
         <div class="flex justify-between items-center">
             <a href="#" class=" font-bold text-2xl tracking-wide"><span class="text-violet-900">IP</span> Detective</a>
             <button id="CloseBtn" class="sm:hidden px-3 py-2 bg-slate-900 rounded text-white">X</button>
         </div>
         <div class="">
-          <div class="flex flex-col gap-7 mt-3 sm:mt-0 hidden  sm:space-x-12 sm:block" id="headerTile">
+          <div class="flex flex-col sm:gap-7 gap-3 mt-3 sm:mt-0 hidden  sm:space-x-3 sm:block" id="headerTile">
             <a href="index.html" class="text-violet-900 font-bold">Home</a>
             <a href="" class="text-gray-500 hover:text-violet-900">About us</a>
             <a href="login.html" class="font-bold px-6 py-2 border border-black hover:bg-gray-200">Log in</a>
@@ -35,25 +35,18 @@
         </div>
         <h1 class="text-center p-4 font-light text-4xl text-violet-900" id="ipAddress"></h1>
       </div>
-      <!-- <table class="border-collapse borderborder-slate-400 mt-10 mx-auto block sm:flex sm:justify-center overflow-scroll table-fixed "> 
+      <table class="border-collapse borderborder-slate-400 mt-10 mx-auto block sm:flex sm:justify-center overflow-scroll table-fixed "> 
          <tr>
            <th class="border p-4 bg-violet-200">USER NAME</th>
            <th class="border p-4 bg-violet-200">EMAIL</th>
            <th class="border p-4 bg-violet-200">IP ADDRESS</th>
            <th class="border p-4 bg-violet-200">REGISTER TIME</th>
-           <th class="border p-4 bg-violet-200">DELETE</th>
          </tr>
-         <tr >
-          <td class="border p-4">praveen</td>
-          <td class="border p-4"><a href="mailto:someone@example.com">
-            praveen200307@gmail.com
-          </a></td>
-          <td class="border p-4">33.454.456.44</td>
-          <td class="border p-4">24th july 2003</td>
-          <td class="border p-4 text-gray-500 cursor-pointer" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M5 21V6H4V4h5V3h6v1h5v2h-1v15zm2-2h10V6H7zm2-2h2V8H9zm4 0h2V8h-2zM7 6v13z"/></svg></td>
+         <tr id="tableDetail">
          </tr>
-      </table> -->
+      </table>
    </main>
    <script type="module" src="./assets/js/index.js"></script>
+   <script type="module" src="./assets/js/main.js"></script>
 </body>
 </html>
