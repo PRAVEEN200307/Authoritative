@@ -1,7 +1,7 @@
 const closeBtn = document.querySelector('#CloseBtn');
 const headerMenu = document.querySelector('#headerTile');
 
-const handleCLick = () => {
+export const handleCLick = () => {
     headerMenu.classList.toggle('hidden')
 }
 

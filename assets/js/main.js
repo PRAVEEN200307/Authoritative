@@ -2,9 +2,10 @@
 const ipaddressTxt = document.querySelector("#ipAddress");
 
 async function showIpaddress() {
+   const loginData = JSON.parse(localStorage.getItem('loginData'));
     const ip = await fetch('https://httpbin.org/ip')
     const ipData = await ip.json();
-    ipaddressTxt.innerText = ipData.origin
+    ipaddressTxt.innerText = loginData[0].name
     return ipData.origin
 }
 showIpaddress()
@@ -14,10 +15,14 @@ async function appendData() {
    try{
     const tableDetail = document.querySelector('#tableDetail');
     const loginData = JSON.parse(localStorage.getItem('loginData'));
+    console.log(loginData)
+
     let ipdate = await showIpaddress();
     const content = `
     <td class="border p-4">${loginData[0].name}</td>
+    <td class="border p-4">20</td>
     <td class="border p-4"><a href="mailto:someone@example.com">${loginData[0].email}</a></td>
+    <td class="border p-4">${loginData[0].address}</td>
     <td class="border p-4">${ipdate}</td>
     <td class="border p-4">${loginData[0].registertime}</td>    
     `

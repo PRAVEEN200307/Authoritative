@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import { resolve } from "path";
 
 export default defineConfig({
-  base: "/ip_detective/",
+  base: "/Authoritative/",
   build: {
     rollupOptions: {
       input: {
